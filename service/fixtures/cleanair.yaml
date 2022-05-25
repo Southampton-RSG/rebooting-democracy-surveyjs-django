@@ -1,0 +1,85 @@
+- model: service.Survey
+  pk: 1
+  fields:
+    name: Clean Air Survey
+    json: >
+      {
+       "title": "Clean Air Survey",
+       "description": "Southampton has terrible air quality. We'd like your opinion on how to improve it.",
+       "logoPosition": "right",
+       "pages": [
+        {
+         "name": "page1",
+         "elements": [
+          {
+           "type": "panel",
+           "name": "Main",
+           "elements": [
+            {
+             "type": "matrix",
+             "name": "Options",
+             "titleLocation": "hidden",
+             "hideNumber": true,
+             "isRequired": true,
+             "columns": [
+              {
+               "value": "Column 1",
+               "text": "Strongly disagree"
+              },
+              {
+               "value": "Column 2",
+               "text": "Disagree"
+              },
+              {
+               "value": "Column 3",
+               "text": "Neither agree nor disagree"
+              },
+              {
+               "value": "Column 4",
+               "text": "Agree"
+              },
+              {
+               "value": "Column 5",
+               "text": "Strongly agree"
+              }
+             ],
+             "rows": [
+              {
+               "value": "Row 1",
+               "text": "More electric car charging points"
+              },
+              {
+               "value": "Row 2",
+               "text": "More bike lanes"
+              },
+              {
+               "value": "Row 3",
+               "text": "More bus lanes"
+              },
+              {
+               "value": "Row 4",
+               "text": "Tram network"
+              }
+             ]
+            },
+            {
+             "type": "text",
+             "name": "Other",
+             "titleLocation": "left",
+             "hideNumber": true,
+             "placeHolder": "What other measure would you suggest Southampton invest in not listed above?"
+            }
+           ],
+           "title": "What should Southampton invest in to reduce pollution?"
+          },
+          {
+           "type": "comment",
+           "name": "Comment",
+           "description": "What comments do you have on Southampton's Clean Air Strategy?",
+           "hideNumber": true,
+           "placeHolder": "Please let us know."
+          }
+         ]
+        }
+       ]
+      }
