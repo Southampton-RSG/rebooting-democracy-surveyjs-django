@@ -1,0 +1,111 @@
+{
+ "title": "Clean Air Survey",
+ "description": "Southampton has terrible air quality. We'd like your opinion on how to improve it.",
+ "logoPosition": "right",
+ "pages": [
+  {
+   "name": "What should Southampton invest in to reduce pollution?",
+   "elements": [
+    {
+     "type": "panel",
+     "name": "Panel 1",
+     "elements": [
+      {
+       "type": "matrix",
+       "name": "Question 1",
+       "titleLocation": "hidden",
+       "hideNumber": true,
+       "isRequired": true,
+       "columns": [
+        {
+         "value": "Column 1",
+         "text": "Strongly disagree"
+        },
+        {
+         "value": "Column 2",
+         "text": "Disagree"
+        },
+        {
+         "value": "Column 3",
+         "text": "Neither agree nor disagree"
+        },
+        {
+         "value": "Column 4",
+         "text": "Agree"
+        },
+        {
+         "value": "Column 5",
+         "text": "Strongly agree"
+        }
+       ],
+       "rows": [
+        {
+         "value": "Row 1",
+         "text": "More electric car charging points"
+        }
+       ]
+      },
+      {
+       "type": "paneldynamic",
+       "name": "Arguments for",
+       "hideNumber": true,
+       "templateElements": [
+        {
+         "type": "comment",
+         "name": "Other",
+         "minWidth": "300",
+         "title": "Argument for",
+         "hideNumber": true,
+         "isRequired": true,
+         "placeHolder": "Do you have any arguments in favour of this proposal?",
+         "autoGrow": true
+        }
+       ],
+       "noEntriesText": "Do you have any arguments against this proposal?",
+       "panelsState": "collapsed",
+       "panelAddText": "Add new argument for the proposal"
+      },
+      {
+       "type": "paneldynamic",
+       "name": "Arguments against",
+       "startWithNewLine": false,
+       "hideNumber": true,
+       "templateElements": [
+        {
+         "type": "comment",
+         "name": "question1",
+         "title": "Argument against",
+         "titleLocation": "top",
+         "hideNumber": true,
+         "isRequired": true,
+         "placeHolder": "Do you have any arguments against this proposal?",
+         "autoGrow": true
+        }
+       ],
+       "noEntriesText": "Do you have any arguments against this proposal?",
+       "panelsState": "expanded",
+       "panelAddText": "Add new argument against the proposal"
+      },
+      {
+       "type": "comment",
+       "name": "Comment",
+       "startWithNewLine": false,
+       "titleLocation": "top",
+       "hideNumber": true,
+       "placeHolder": "Do you have any comments on this question?",
+       "autoGrow": true
+      }
+     ]
+    },
+    {
+     "type": "comment",
+     "name": "Comment",
+     "description": "What comments do you have on Southampton's Clean Air Strategy?",
+     "hideNumber": true,
+     "placeHolder": "Please let us know."
+    }
+   ],
+   "title": "What should Southampton invest in to reduce pollution?"
+  }
+ ]
+}

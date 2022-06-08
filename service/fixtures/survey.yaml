@@ -13,58 +13,60 @@
          "elements": [
           {
            "type": "panel",
-           "name": "Main",
+           "name": "questions",
            "elements": [
             {
              "type": "matrix",
-             "name": "Options",
+             "name": "options",
+             "title": "Options",
              "titleLocation": "hidden",
              "hideNumber": true,
              "isRequired": true,
              "columns": [
               {
-               "value": "Column 1",
+               "value": "-2",
                "text": "Strongly disagree"
               },
               {
-               "value": "Column 2",
+               "value": "-1",
                "text": "Disagree"
               },
               {
-               "value": "Column 3",
+               "value": "0",
                "text": "Neither agree nor disagree"
               },
               {
-               "value": "Column 4",
+               "value": "1",
                "text": "Agree"
               },
               {
-               "value": "Column 5",
+               "value": "2",
                "text": "Strongly agree"
               }
              ],
              "rows": [
               {
-               "value": "Row 1",
+               "value": "more_electric_car_charging_points",
                "text": "More electric car charging points"
               },
               {
-               "value": "Row 2",
+               "value": "more_bike_lanes",
                "text": "More bike lanes"
               },
               {
-               "value": "Row 3",
+               "value": "more_bus_lanes",
                "text": "More bus lanes"
               },
               {
-               "value": "Row 4",
+               "value": "tram_network",
                "text": "Tram network"
               }
              ]
             },
             {
              "type": "text",
-             "name": "Other",
+             "name": "other",
+             "title": "Other",
              "titleLocation": "left",
              "hideNumber": true,
              "placeHolder": "What other measure would you suggest Southampton invest in not listed above?"
@@ -74,7 +76,8 @@
           },
           {
            "type": "comment",
-           "name": "Comment",
+           "name": "comment",
+           "title": "Comment",
            "description": "What comments do you have on Southampton's Clean Air Strategy?",
            "hideNumber": true,
            "placeHolder": "Please let us know."
