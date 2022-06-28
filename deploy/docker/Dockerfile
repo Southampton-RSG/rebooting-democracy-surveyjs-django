@@ -14,7 +14,8 @@ ENV VIRTUAL_ENV /env
 ENV PATH /env/bin:$PATH
 
 EXPOSE 8000
+EXPOSE 8100
 
 RUN python manage.py makemigrations && python manage.py migrate
 RUN python manage.py collectstatic --noinput && python manage.py loaddata service/fixtures/*.yaml
-CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "surveyjs.wsgi:application"]
+CMD ["gunicorn", "--bind", ":8100", "--workers", "3", "surveyjs.wsgi:application"]
